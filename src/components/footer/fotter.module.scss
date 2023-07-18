@@ -1,0 +1,32 @@
+.footer {
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #0067A3;
+  flex-shrink: 0;
+  padding-left: 12px;
+
+  .spanTasks {
+    margin-left: 10px;
+  }
+  
+  span:last-of-type {
+    margin-left: 24px;
+  }
+  div {
+    margin-left: auto; 
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .footer {
+    .spanTasks {
+    max-width: 338px;
+    margin: auto;
+    }
+    .divName {
+      display: none;
+    }
+  } 
+}

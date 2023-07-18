@@ -1,0 +1,22 @@
+.board {
+  display: flex;
+  > *:not(:first-of-type) {
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .board {
+    max-width: 338px;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    > *:first-of-type {
+      margin-top: 50px;
+      margin-left: 24px;
+      margin-bottom: 50px;
+    }
+    > *:not(:first-of-type) {
+      margin-bottom: 50px;
+    }
+  } 
+}
